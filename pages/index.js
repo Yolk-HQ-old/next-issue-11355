@@ -1,6 +1,8 @@
-import Head from 'next/head'
+import Head from "next/head";
+import { nanoid } from "nanoid";
 
 export default function Home() {
+  const id = nanoid();
   return (
     <div className="container">
       <Head>
@@ -200,5 +202,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
